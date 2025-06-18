@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet MEDFOOD TTHUBS - ADEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: { 'brand-blue': '#005A9C', 'brand-red': '#D5233E', 'brand-green': '#43A047' }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-700">
+    <header id="header" class="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html#home" class="flex items-center">
+                <img src="assets/img/adep-logo.png" alt="Logo ADEP" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#about" class="nav-link">À Propos</a>
+                <a href="index.html#projects" class="nav-link">Projets</a>
+                <a href="index.html#team" class="nav-link">Notre Équipe</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="index.html#about" class="block py-2 px-4 text-sm hover:bg-gray-700">À Propos</a>
+            <a href="index.html#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projets</a>
+            <a href="index.html#team" class="block py-2 px-4 text-sm hover:bg-gray-700">Notre Équipe</a>
+            <a href="index.html#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+    <main class="py-20">
+        <div class="container mx-auto px-4">
+            <a href="index.html#projects" class="text-brand-blue hover:underline mb-8 inline-block">&larr; Retour à tous les projets</a>
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">Projet MEDFOOD TTHUBS</h1>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-8 p-4 bg-blue-50 border-l-4 border-brand-blue rounded-r-lg">
+                        <h3 class="text-lg font-semibold text-gray-800">Informations Clés</h3>
+                        <p class="text-base text-gray-700 mt-1"><strong>Programme de Financement :</strong> PRIMA SECTION 1</p>
+                        <p class="text-base text-gray-700"><strong>Période :</strong> 2020 - 2023</p>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Objectif du Projet</h2>
+                    <p class="text-base text-gray-600 mb-6">Le projet MEDFOOD TTHUBS, ou "Trace & Trust Hubs for MED food", se concentre sur le développement et la mise en œuvre de pratiques de traçabilité avancées pour améliorer la sécurité, l'authenticité et la qualité des produits alimentaires méditerranéens, renforçant ainsi la confiance des consommateurs.</p>
+                    
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Notre Rôle</h2>
+                    <p class="text-base text-gray-600 mb-10">L'ADEP a joué un rôle essentiel dans la dissémination des outils développés par le projet. Notre principale contribution a été l'organisation de campagnes de sensibilisation ciblées pour promouvoir et encourager l'adoption de la plateforme en ligne MED Food TTHubs par les agriculteurs, les producteurs et les autres acteurs de la chaîne de valeur alimentaire.</p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Galerie d'Activités</h2>
+                    <div id="project-photos-carousel" class="relative max-w-full mx-auto shadow-xl rounded-lg overflow-hidden">
+                        <div class="carousel-item duration-700 ease-in-out">
+                            <img src="assets/img/medfood-tthubs-activite-1.jpg" alt="Activité 1 du projet MEDFOOD TTHUBS" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="carousel-item hidden duration-700 ease-in-out">
+                            <img src="assets/img/medfood-tthubs-activite-2.jpg" alt="Activité 2 du projet MEDFOOD TTHUBS" class="w-full h-auto object-cover">
+                        </div>
+                        <button type="button" id="prev-btn-project" class="absolute top-1/2 left-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/50"><svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg></button>
+                        <button type="button" id="next-btn-project" class="absolute top-1/2 right-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/50"><svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white text-center p-6">
+        <p>&copy; 2024 ADEP - Tous droits réservés.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
