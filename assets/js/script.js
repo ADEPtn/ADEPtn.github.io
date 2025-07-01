@@ -35,9 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
         showItem(currentIndex);
     };
 
-    // Initialize carousels
-    setupCarousel('project-carousel', 'prev-btn-main', 'next-btn-main'); // Main page project carousel
-    setupCarousel('project-photos-carousel', 'prev-btn-project', 'next-btn-project'); // Project page photo carousel
+    // Initialize all carousels on the site
+    setupCarousel('project-carousel', 'prev-btn-main', 'next-btn-main');
+    setupCarousel('project-photos-carousel', 'prev-btn-project', 'next-btn-project');
+    setupCarousel('article-photos-carousel', 'prev-btn-article', 'next-btn-article'); // NOUVEAU
     
     // --- Mobile Menu Logic ---
     const mobileMenuButton = document.getElementById('mobile-menu-button');
