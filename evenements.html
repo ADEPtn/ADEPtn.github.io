@@ -3,41 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Évènements - ADEP</title>
-    <!-- Copiez le même <head> que sur index.html -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: { 'brand-blue': '#005A9C', 'brand-red': '#D5233E', 'brand-green': '#43A047' }
+            }
+          }
+        }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-700">
     <header id="header" class="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
-         <!-- Copiez le même header que sur index.html -->
+        <!-- Copiez ici le même <header> que sur index.html pour la cohérence -->
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html#home" class="flex items-center">
+                <img src="assets/img/adep-logo.png" alt="Logo ADEP" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#about" class="nav-link">À Propos</a>
+                <a href="index.html#expertise" class="nav-link">Notre Expertise</a>
+                <a href="index.html#projects" class="nav-link">Projets</a>
+                <a href="activites.html" class="nav-link">Nos Activités</a>
+                <a href="index.html#team" class="nav-link">Notre Équipe</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="index.html#about" class="block py-2 px-4 text-sm hover:bg-gray-700">À Propos</a>
+            <a href="index.html#expertise" class="block py-2 px-4 text-sm hover:bg-gray-700">Notre Expertise</a>
+            <a href="index.html#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projets</a>
+            <a href="activites.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Nos Activités</a>
+            <a href="index.html#team" class="block py-2 px-4 text-sm hover:bg-gray-700">Notre Équipe</a>
+            <a href="index.html#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
     </header>
     <main class="py-20">
         <div class="container mx-auto px-4">
             <a href="activites.html" class="text-brand-blue hover:underline mb-8 inline-block">&larr; Retour à Nos Activités</a>
             <h1 class="text-4xl font-bold text-gray-800 mb-12 text-center">Évènements à venir</h1>
-            <div class="space-y-8 max-w-3xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Évènement 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-6">
-                    <div class="text-center bg-brand-red text-white p-3 rounded-md">
-                        <p class="text-3xl font-bold">10</p>
-                        <p class="text-sm">JUIL</p>
-                    </div>
-                    <div class="flex-1">
-                        <h2 class="text-2xl font-bold text-gray-800">Webinaire : L'avenir du secteur laitier</h2>
-                        <p class="text-gray-500 text-sm mt-1">En ligne | 14:00 - 16:00</p>
-                        <p class="text-gray-600 mt-2">Rejoignez-nous pour une discussion en ligne sur les innovations issues du projet TRANSDAIRY.</p>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/event-1.jpg" alt="Image événement 1" class="w-full h-48 object-cover">
+                    <div class="p-6 flex gap-4">
+                        <div class="text-center">
+                            <p class="text-sm font-semibold text-brand-red">JUIL</p>
+                            <p class="text-3xl font-bold text-gray-800">10</p>
+                        </div>
+                        <div class="border-l-2 border-gray-200 pl-4">
+                            <h2 class="text-xl font-bold text-gray-800">Webinaire : L'avenir du secteur laitier</h2>
+                            <p class="text-gray-500 text-sm mt-1">En ligne | 14:00 - 16:00</p>
+                            <p class="text-gray-600 mt-2 text-sm">Rejoignez-nous pour une discussion en ligne sur les innovations issues du projet TRANSDAIRY.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Évènement 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md flex items-center gap-6">
-                    <div class="text-center bg-brand-red text-white p-3 rounded-md">
-                        <p class="text-3xl font-bold">25</p>
-                        <p class="text-sm">SEP</p>
-                    </div>
-                    <div class="flex-1">
-                        <h2 class="text-2xl font-bold text-gray-800">Atelier de restitution LandCare MED</h2>
-                        <p class="text-gray-500 text-sm mt-1">Hôtel Les Jasmins, Tunis | 09:00 - 17:00</p>
-                        <p class="text-gray-600 mt-2">Présentation des résultats finaux et des recommandations politiques du projet LandCare MED.</p>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/img/event-2.jpg" alt="Image événement 2" class="w-full h-48 object-cover">
+                    <div class="p-6 flex gap-4">
+                        <div class="text-center">
+                            <p class="text-sm font-semibold text-brand-red">SEP</p>
+                            <p class="text-3xl font-bold text-gray-800">25</p>
+                        </div>
+                        <div class="border-l-2 border-gray-200 pl-4">
+                            <h2 class="text-xl font-bold text-gray-800">Atelier de restitution LandCare MED</h2>
+                            <p class="text-gray-500 text-sm mt-1">Hôtel Les Jasmins, Tunis | 09:00 - 17:00</p>
+                            <p class="text-gray-600 mt-2 text-sm">Présentation des résultats finaux et des recommandations politiques du projet LandCare MED.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Ajoutez d'autres événements ici sur le même modèle -->
             </div>
         </div>
     </main>
@@ -47,4 +91,3 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
