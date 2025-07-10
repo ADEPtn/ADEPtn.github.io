@@ -1,0 +1,20 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-background.jpg'); /* Modifiez le nom de l'image si besoin */
+    background-size: cover;
+    background-position: center;
+}
+.section-title {
+    @apply text-3xl font-bold text-center mb-12 text-gray-800;
+}
+.nav-link {
+    @apply text-white hover:text-blue-300 transition-colors duration-300;
+}
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
