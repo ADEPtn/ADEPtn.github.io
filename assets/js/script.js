@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize all carousels on the site
     setupCarousel('project-carousel', 'prev-btn-main', 'next-btn-main');
-    setupCarousel('board-carousel', 'prev-btn-board', 'next-btn-board'); // NOUVEAU
+    setupCarousel('board-carousel', 'prev-btn-board', 'next-btn-board');
     setupCarousel('project-photos-carousel', 'prev-btn-project', 'next-btn-project');
     setupCarousel('article-photos-carousel', 'prev-btn-article', 'next-btn-article');
     
