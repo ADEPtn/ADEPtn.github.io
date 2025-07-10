@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEP - Association for the Development and Preservation of the Environment and Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: { 'brand-blue': '#005A9C', 'brand-red': '#D5233E', 'brand-green': '#43A047' }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-700">
+    <header id="header" class="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html#home" class="flex items-center">
+                <img src="../assets/img/adep-logo.png" alt="ADEP Logo" class="h-12">
+            </a>
+            div class="flex items-center">
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#expertise" class="nav-link">Our Expertise</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="activites.html" class="nav-link">Our Activities</a>
+                    <a href="#team" class="nav-link">Our Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center ml-6 border-l border-gray-600 pl-6">
+                    <a href="../index.html" class="mr-2 text-gray-400 hover:text-white">FR</a>
+                    <span class="font-bold text-white">EN</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden ml-4 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About Us</a>
+            <a href="#expertise" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Expertise</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="activites.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Activities</a>
+            <a href="#team" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Team</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+            <div class="border-t border-gray-700 mt-4 pt-4 text-center">
+                <a href="../index.html" class="mr-2 text-gray-400 hover:text-white">FR</a>
+                <span class="font-bold text-white">EN</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero-bg h-screen flex items-center justify-center text-white text-center">
+            <div class="container mx-auto px-4">
+               <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Association for the Development and Preservation of the Environment and Heritage</h1>
+               <p class="text-lg md:text-2xl font-light">Fostering sustainable futures in the Mediterranean through collaboration and innovation.</p>
+           </div>
+       </section>
+
+       <section id="latest-news" class="py-20 bg-white">
+           <div class="container mx-auto px-4">
+               <h2 class="section-title">Latest News</h2>
+               <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                   <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                       <img src="../assets/img/news-1.jpg" alt="News 1 Image" class="w-full h-48 object-cover">
+                       <div class="p-6">
+                           <p class="text-sm text-gray-500 mb-2">June 15, 2025</p>
+                           <h2 class="text-xl font-bold text-gray-800 mb-3">Launch of the OLIWA Project Final Report</h2>
+                           <p class="text-gray-600 text-sm mb-4">We are proud to present the final results of three years of intensive research to transform olive waste...</p>
+                           <a href="article-1.html" class="font-semibold text-brand-blue hover:underline">Read more &rarr;</a>
+                       </div>
+                   </div>
+                   <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                       <img src="../assets/img/news-2.jpg" alt="News 2 Image" class="w-full h-48 object-cover">
+                       <div class="p-6">
+                           <p class="text-sm text-gray-500 mb-2">May 28, 2025</p>
+                           <h2 class="text-xl font-bold text-gray-800 mb-3">Water Management Training in Béja</h2>
+                           <p class="text-gray-600 text-sm mb-4">As part of the SMART IWRM project, ADEP organized a training session for local farmers on sustainable...</p>
+                           <a href="article-2.html" class="font-semibold text-brand-blue hover:underline">Read more &rarr;</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="text-center mt-12">
+                   <a href="actualites.html" class="inline-block bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                       View all news
+                   </a>
+               </div>
+           </div>
+       </section>
+       <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">About Us</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-lg mb-4">Founded in Tunisia in 2017, ADEP is a non-governmental organization (NGO) whose main mission is to contribute to the environmental, social, and economic sustainability of communities.</p>
+                <p class="text-lg">We are strategically positioned to promote best practices and communicate international standards, emphasizing shared responsibilities in protecting our precious environmental and cultural heritage, especially in the face of global changes.</p>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Our Board of Directors</h3>
+                <div id="board-carousel" class="relative max-w-3xl mx-auto shadow-lg rounded-lg overflow-hidden bg-gray-100 h-96">
+                    <div class="carousel-item duration-700 ease-in-out absolute inset-0">
+                        <div class="flex flex-col items-center justify-center h-full text-center">
+                            <img src="../assets/img/bureau-1.jpg" alt="Photo of Board Member" class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-md">
+                            <h4 class="mt-4 text-2xl font-bold text-gray-800">Board Member Name 1</h4>
+                            <p class="text-gray-600">Board Member Role 1</p>
+                            <div class="mt-4">
+                                <a href="#" target="_blank" class="text-gray-400 hover:text-brand-blue transition-colors duration-300">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="prev-btn-board" class="absolute top-1/2 left-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/50"><svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg></button>
+                    <button type="button" id="next-btn-board" class="absolute top-1/2 right-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/50"><svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg></button>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="../assets/pdf/jort.pdf" download="JORT_ADEP.pdf" class="inline-block bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-md">
+                        Download National JORT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="expertise" class="py-20 bg-white">
+        <!-- ... Translated expertise content ... -->
+    </section>
+    
+    <section id="projects" class="py-20 bg-blue-50">
+        <!-- ... Translated projects content ... -->
+    </section>
+
+    <section id="team" class="py-20 bg-white">
+        <!-- ... Translated team content ... -->
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <!-- ... Translated contact content ... -->
+    </section>
+    
+    <section id="partners" class="py-20 bg-gray-50">
+        <!-- ... Translated partners content ... -->
+    </section>
+</main>
+<footer class="bg-gray-900 text-white text-center p-6">
+    <div class="container mx-auto">
+        <p class="mb-4">&copy; 2024 ADEP - All rights reserved.</p>
+        <div>
+            <a href="https://www.facebook.com/YOUR_PAGE" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                <svg class="w-8 h-8 inline-block" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
