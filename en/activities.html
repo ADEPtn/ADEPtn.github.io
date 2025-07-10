@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Activities - ADEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: { 'brand-blue': '#005A9C', 'brand-red': '#D5233E', 'brand-green': '#43A047' }
+            }
+          }
+        }
+    </script>
+    <!-- ... Copiez le <head> de en/index.html ... -->
+</head>
+<body class="bg-gray-50 text-gray-700">
+    <header id="header" class="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html#home" class="flex items-center">
+                <img src="../assets/img/adep-logo.png" alt="ADEP Logo" class="h-12">
+            </a>
+            div class="flex items-center">
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#expertise" class="nav-link">Our Expertise</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="activites.html" class="nav-link">Our Activities</a>
+                    <a href="#team" class="nav-link">Our Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center ml-6 border-l border-gray-600 pl-6">
+                    <a href="../index.html" class="mr-2 text-gray-400 hover:text-white">FR</a>
+                    <span class="font-bold text-white">EN</span>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden ml-4 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About Us</a>
+            <a href="#expertise" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Expertise</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="activites.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Activities</a>
+            <a href="#team" class="block py-2 px-4 text-sm hover:bg-gray-700">Our Team</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+            <div class="border-t border-gray-700 mt-4 pt-4 text-center">
+                <a href="../index.html" class="mr-2 text-gray-400 hover:text-white">FR</a>
+                <span class="font-bold text-white">EN</span>
+            </div>
+        </div>
+    </header>
+    <main class="py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-12 text-center">Our Activities</h1>
+            <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                <a href="actualites.html" class="block bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center">
+                    <h2 class="text-3xl font-bold text-brand-blue mb-4">News</h2>
+                    <p class="text-gray-600">Follow the latest news, publications, and successes from our projects and our association.</p>
+                </a>
+                <a href="evenements.html" class="block bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center">
+                    <h2 class="text-3xl font-bold text-brand-green mb-4">Upcoming Events</h2>
+                    <p class="text-gray-600">Discover our upcoming workshops, seminars, and conferences. Join us!</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white text-center p-6">
+        <!-- ... Copiez le <footer> de en/index.html ... -->
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
